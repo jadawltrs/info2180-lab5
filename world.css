@@ -24,3 +24,20 @@ main {
     padding: 20px;
 }
 
+table {
+    width: 100%;
+    margin:20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: rgb(174, 193, 228);
+}

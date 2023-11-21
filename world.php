@@ -18,8 +18,18 @@ else{
 }
 
 ?>
-<ul>
-<?php foreach ($results as $row): ?>
-  <li><?= $row['name'] . ' is ruled by ' . $row['head_of_state']; ?></li>
-<?php endforeach; ?>
-</ul>
+<?php
+echo '<table>';
+  echo '<thead><tr><th>Name</th><th>Continent</th><th>Independence</th><th>Head of State</th></tr></thead>';
+
+  foreach ($results as $row):
+    echo '<tr>';
+      echo '<td>' . $row['name'] . '</td>';
+      echo '<td>' . $row['continent'] . '</td>';
+      echo '<td>' . $row['independence_year'] . '</td>';
+      echo '<td>' . $row['head_of_state'] . '</td>';
+    echo '</tr>';
+  endforeach;
+
+echo '</table>';
+?>
